@@ -25,4 +25,11 @@ public class Ctrol2Script : MonoBehaviour
     void exitJump(){
         ani.SetBool( "saltar", false );
     }
+
+    public void resetAnimation()
+    {
+        ani.SetFloat( "velocidad", 0 );
+        ani.SetFloat( "direccion", 0 );
+        exitJump();
+    }
 }
